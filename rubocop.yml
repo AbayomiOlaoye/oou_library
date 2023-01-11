@@ -1,3 +1,5 @@
+Style/Documentation:
+  Enabled: false
 AllCops:
   NewCops: enable
   Exclude:
@@ -20,8 +22,6 @@ Metrics/BlockLength:
   Max: 30
 
 
-Style/Documentation:
-  Enabled: false
 Style/ClassAndModuleChildren:
   Enabled: false
 Style/EachForSimpleLoop:
@@ -50,3 +50,4 @@ Style/HashTransformKeys:
   Enabled: false
 Style/HashTransformValues:
   Enabled: false
+TargetRubyVersion: 2.6

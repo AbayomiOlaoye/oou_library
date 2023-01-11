@@ -1,9 +1,10 @@
+# frozen_string_literal: true
+
 require_relative './person'
 
-# frozen_string_literal: true
+# top-level documentation comment for class Student.
 class Student < Person
   attr_reader :classroom, :age, :parent_permission
-  attr_accessor :type
 
   def initialize(classroom, name, age, parent_permission)
     super(age, name, parent_permission)
