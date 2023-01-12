@@ -1,11 +1,9 @@
-# frozen_string_literal: true
-
 # Creating an Object of Person
 class Person
-  attr_accessor :name, :age
+  attr_accessor :age, :name
   attr_reader :id
 
-  def initialize(name = 'Unknown', age, parent_permission = true)
+  def initialize(age, name = 'Unknown', parent_permission: true)
     super()
     @id = Random.rand(1..1000)
     @name = name
@@ -23,4 +21,3 @@ class Person
     of_age? || @parent_permission
   end
 end
-    

@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 require_relative './person'
 
 # top-level documentation comment for class Teacher.
