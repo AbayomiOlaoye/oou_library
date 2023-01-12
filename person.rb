@@ -1,5 +1,7 @@
+require_relative './nameable'
+
 # Creating an Object of Person
-class Person
+class Person < Nameable
   attr_accessor :age, :name
   attr_reader :id
 
@@ -19,5 +21,9 @@ class Person
 
   def can_use_services?
     of_age? || @parent_permission
+  end
+
+  def correct_name
+    @name
   end
 end
