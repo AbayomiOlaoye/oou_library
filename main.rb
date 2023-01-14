@@ -27,9 +27,9 @@ def choose_action(app)
   choice = gets.chomp
   case choice
   when '1'
-    app.display_books
+    app.list_all_books
   when '2'
-    app.display_people
+    app.list_all_people
   when '3'
     app.create_person
   when '4'
@@ -44,7 +44,7 @@ def choose_action(app)
 end
 
 def exit_app
-  puts 'Thank you for using this app! Now exiting...'
+  puts 'I am glad you that you enjoyed the app! Now exiting...'
   exit
 end
 

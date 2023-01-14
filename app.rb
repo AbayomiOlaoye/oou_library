@@ -14,7 +14,7 @@ class App
   end
 
   def list_all_books
-    if @book_list.length.zero?
+    if @book_list.empty?
       puts 'We ran out of books'
     else
       @book_list.each_with_index do |book, index|
@@ -24,7 +24,7 @@ class App
   end
 
   def list_all_people
-    if @people_list.length.zero?
+    if @people_list.empty?
       puts 'List is empty for now'
     else
       @people_list.each_with_index do |person, index|
@@ -87,19 +87,6 @@ class App
     @people_list << new_teacher
   end
 
-  def create_rental
-    puts 'Select a book from the following list using number'
-    list_all_books
-    rented_book = gets.chomp.capitalize
-    puts 'Select a person from the following list using number (not by id)'
-    list_all_people
-    renter = gets.chomp.capitalize
-    puts 'Date [yyyy/mm/dd]: '
-    date_of_rent = gets.chomp
-    add_rental(date_of_rent, rented_book, renter)
-    print "Rental created successfully.\n"
-  end
-
   def add_book(book_title, book_author)
     new_book = Book.new(book_title, book_author)
     @book_list << new_book
@@ -107,10 +94,10 @@ class App
 
   def create_rental
     puts 'Choose a book from the following list by number'
-    display_books
+    list_all_books
     rented_book = gets.chomp.capitalize
     puts 'Choose a person from the following list by number - (not by id)'
-    display_people
+    list_all_people
     renter = gets.chomp.capitalize
     puts 'Date [yyyy/mm/dd]: '
     date_of_rent = gets.chomp
@@ -131,7 +118,7 @@ class App
   end
 
   def list_rental_by_id(renter_id)
-    if @rental_list.length.zero?
+    if @rental_list.empty?
       puts 'No rental for now'
     else
       @rental_list.each do |rental|
