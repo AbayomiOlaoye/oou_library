@@ -87,6 +87,15 @@ class App
     @people_list << new_teacher
   end
 
+  def create_book
+    print 'Title: '
+    book_title = gets.chomp.capitalize
+    print 'Author: '
+    book_author = gets.chomp.capitalize
+    add_book(book_title, book_author)
+    print "Book was created successfully.\n"
+  end
+
   def add_book(book_title, book_author)
     new_book = Book.new(book_title, book_author)
     @book_list << new_book
