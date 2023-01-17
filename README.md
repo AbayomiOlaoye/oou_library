@@ -134,9 +134,9 @@ To run the project, execute the following command:
 
 👤 **Oluwatoyin Olaoye**
 
-- GitHub: [@abayomiolaoye](https://github.com/abayomiolaoy)
-- Twitter: [@twitterhandle](https://twitter.com/olaoyeelijah)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/oluwatoyinolaoye)
+- GitHub: [![GitHub](https://img.shields.io/badge/-Abayomi-white?logo=GitHub&logoColor=181717&style=plastic)](https://github.com/abayomiolaoye)
+- Twitter: [![Twitter](https://img.shields.io/badge/-Abayomi-blue?logo=Twitter&logoColor=skyBlue&style=plastic)](https://twitter.com/olaoyeelijah)
+- LinkedIn: [![LinkedIn](https://img.shields.io/badge/-Oluwatoyin-white?logo=LinkedIn&logoColor=181717&style=plastic)](https://linkedin.com/in/oluwatoyinolaoye)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
